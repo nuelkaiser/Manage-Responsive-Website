@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.button {
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: hsl(12, 88%, 59%);
+    padding: 14px 30px;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.white {
+    border: none;
+    color:  hsl(12, 88%, 59%);
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 14px 30px;
+}
