@@ -7,6 +7,10 @@ import Benefits from '../Resusable/Benefits';
 import Slider from '../Resusable/Slider';
 import Mobile from '../Resusable/Mobile-Slider'
 import Footer from '../Resusable/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init();
 
 const Home = () => {
     return (
@@ -15,7 +19,7 @@ const Home = () => {
                 <div className='bck-2'>
                     <Nav />
                     <div className='build-better'>
-                        <div className='build-words'>
+                        <div className='build-words' data-aos="fade-up" data-aos-duration="1000">
                             <h1>
                                 Bring everyone together to build better projects.
                             </h1>
@@ -27,14 +31,14 @@ const Home = () => {
                             <Button words={'Get Started'} />
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <img src={Illustration} alt='Illustraion' />
                         </div>
                     </div>
 
                     <div className='differ'>
-                        <div>
-                            <h2 className='differ-heading'>
+                        <div data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+                            <h2 className='differ-heading' >
                                 What's different about Manage?
                             </h2>
                             <p className='differ-words'>
@@ -45,7 +49,7 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
                             <Benefits id={1}
                                 headings={`Track company-wide progress`}
                                 words={`See how your day-to-day task fit into the wider vision.
@@ -72,7 +76,7 @@ const Home = () => {
 
                     </div>
 
-                    <div className='sliders-cont'>
+                    <div className='sliders-cont' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <Slider />
                         <Mobile />
                         <Button words={'Get Started'} />
@@ -81,12 +85,12 @@ const Home = () => {
             </div>
 
 
-            <div className='simplify-container'>
+            <div className='simplify-container' data-aos="zoom" data-aos-duration="700">
                 <h1>
                     Simplify how your team works today.
                 </h1>
 
-                <Button white={`white`} words={`Get Started`} />
+                <Button white={`white`} words={`Get Started`}  />
 
 
             </div>

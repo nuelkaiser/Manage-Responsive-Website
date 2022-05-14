@@ -1,9 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({words, white}) => {
+const Button = ({words, white,}) => {
   return (
-    <button className={white ? 'white' : 'button'}>
+    <button className={white ? 'white' : 'button'} >
         {words}
     </button>
   )
